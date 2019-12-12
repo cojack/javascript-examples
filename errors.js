@@ -1,6 +1,8 @@
-/*function async(callback) {
-    //callback(new Error("Something went wrong"), {a:1});
-    callback(null, {a:1});
+class Exception extends Error {}
+/*
+function async(callback) {
+    callback(new Exception('my exception messg'), {a:1});
+    // callback(null, {a:1});
 }
 
 
@@ -14,12 +16,15 @@ async(function(error, data) {
     //Do the callback work here
     console.log("It worked!", data);
 });
-
+*/
+process.on('uncaughtException', function () {
+    console.error(arguments);
+});
 
 function async(callback) {
-    throw new Error("Something went wrong");
     setImmediate(function(){
         callback();
+        throw new Exception("Something went wrong");
     });
 }
 
@@ -30,16 +35,15 @@ try {
 } catch(error) {
     console.log("This is never printed.");
 }
-
-const
-
+/*
 async function getUserFromDBByEmailAndPassword(email, password) {
     const user = await db.getCollection('users').findOne({email, password});
     if (!user) {
         throw new Error('User does not exists');
     }
 }
- */
+
+
 const EVENT_ERROR_NAME = 'error';
 
 function async() {
@@ -55,3 +59,4 @@ event.on(EVENT_ERROR_NAME, function(error) {
     // When the "error" event is emitted, this is called
     console.error(error);
 });
+*/
