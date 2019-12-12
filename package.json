@@ -1,0 +1,18 @@
+{
+  "name": "example-02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "luxon": "^1.21.3",
+    "moment": "^2.24.0",
+    "myapplication": "https://github.com/MikeMcl/bignumber.js.git#v9.0.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.8"
+  }
+}
