@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "luxon": "^1.21.3",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "myapplication": "https://github.com/MikeMcl/bignumber.js.git#v9.0.0",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.8"
