@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "luxon": "^1.21.3",
+    "luxon": "^2.5.2",
     "moment": "^2.24.0",
     "myapplication": "https://github.com/MikeMcl/bignumber.js.git#v9.0.0",
     "request": "^2.88.0",
